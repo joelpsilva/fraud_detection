@@ -8,7 +8,7 @@
 
 # Outline
 ## Dataset
-*The original data can be downloaded [here](https://www.kaggle.com/mlg-ulb/creditcardfraud)*
+*The original data can be downloaded [here](https://www.kaggle.com/mlg-ulb/creditcardfraud).*
 
 The dataset contains transactions made by credit cards in September 2013, over two days, by European cardholders.
 
