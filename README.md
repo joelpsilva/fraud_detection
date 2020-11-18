@@ -7,24 +7,30 @@
 
 
 # Outline
-
 ## Dataset
 *The original data can be downloaded [here](https://www.kaggle.com/mlg-ulb/creditcardfraud)*
+
 The dataset contains transactions made by credit cards in September 2013, over two days, by European cardholders.
+
 There are 284,807 transactions in the dataset, of which 492 (0.17%) were considered to be frauds (i.e., 'Class' = 1), meaning that the dataset is **extremely unbalanced**.
 
 ## Scaling
 A PCA was performed in the original dataset and the majority of the dataset features ("V" features) are the obtained Principal Components of that transformation.
+
 Columns 'Time' and 'Amount' were scaled (normalized) to match the scale of the other columns.
 
 ## Unbalanced dataset and Random Under-Sampling
 The large amount of identified legitimate transactions versus frauds suggests that this is an unbalanced dataset.
+
 In order to avoid common problems related with this type of dataset, random under-sample technique was applied by generating a subsample with a 50/50 ratio (i.e., same amount) of fraud and legitimate transactions.
 
 ## Logistic Regression Classifier
 Performed feature selection via Recursive Feature Elimination in Cross-Validation (RFECV).
+
 The new balanced subsample was split into training and testing subsets (80/20 split).
+
 Determined the parameters that give the best predictive cross-validation score using GridSearchCV.
+
 Evaluated Logistic Regression model based on accuracy score, classification report and confusion matrix.
 
 ## Improvements and Next Steps
