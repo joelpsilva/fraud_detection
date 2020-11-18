@@ -25,13 +25,10 @@ The large amount of identified legitimate transactions versus frauds suggests th
 In order to avoid common problems related with this type of dataset, random under-sample technique was applied by generating a subsample with a 50/50 ratio (i.e., same amount) of fraud and legitimate transactions.
 
 ## Logistic Regression Classifier
-Performed feature selection via Recursive Feature Elimination in Cross-Validation (RFECV).
-
-The new balanced subsample was split into training and testing subsets (80/20 split).
-
-Determined the parameters that give the best predictive cross-validation score using GridSearchCV.
-
-Evaluated Logistic Regression model based on accuracy score, classification report and confusion matrix.
+* Performed feature selection via Recursive Feature Elimination in Cross-Validation (RFECV).
+* The new balanced subsample was split into training and testing subsets (80/20 split).
+* Determined the parameters that give the best predictive cross-validation score using GridSearchCV.
+* Evaluated Logistic Regression model based on accuracy score, classification report and confusion matrix.
 
 ## Improvements and Next Steps
 Presented several points of improvement to be further explored in this project:
